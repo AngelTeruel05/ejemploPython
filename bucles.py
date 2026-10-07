@@ -41,6 +41,7 @@ while contador <= 10:
 animales = ["perro", "gato", "conejo"]
 
 while animales:
+    #Por defecto pop coje el ultimo elemento de la lista, pero si ponemos cero lo hace con el primero
     animal = animales.pop(0)
     print(animal)
 

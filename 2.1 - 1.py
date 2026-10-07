@@ -1,5 +1,6 @@
 nota = int(input("Ingresa una nota: "))
 
+# version con if
 if nota >= 0 and nota < 5:
     print("Suspenso")
 elif nota >= 5 and nota < 7:
@@ -11,6 +12,7 @@ elif nota >= 9 and nota <= 10:
 else:
     print("Nota no válida")
 
+# Verrsion con match
 match nota:
     case 0| 1 | 2 | 3 | 4:
         print("Suspenso")

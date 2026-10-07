@@ -1,6 +1,20 @@
 precio = float(input("Ingrese el precio del producto: "))
 iva = input("General, Reducido o Superreducido: ").lower()
 
+# Version con if
+if iva == "general":
+    precio_final = precio * 1.21
+    print("El precio final con IVA general es: ", precio_final)
+elif iva == "reducido":
+    precio_final = precio * 1.10
+    print("El precio final con IVA reducido es: ", precio_final)
+elif iva == "superreducido":
+    precio_final = precio * 1.04
+    print("El precio final con IVA superreducido es: ", precio_final)
+else:
+    print("Tipo de IVA no válido")
+
+# Verson con match
 match iva:
     case "general":
         precio_final = precio * 1.21

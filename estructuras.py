@@ -6,7 +6,7 @@ elif numero < 0:
 else:
     print("El número es cero") 
 
-dia = input("Ingrese un día de la semana: ")
+dia = input("Ingrese un día de la semana: ").lower()
 match dia:
     case "lunes":
         print("Hoy es lunes")

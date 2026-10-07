@@ -1,4 +1,4 @@
-lluvia = int(input("Ingrese los mm de lluvia acumulados: "))
+lluvia = float(input("Ingrese los mm de lluvia acumulados: "))
 
 # Version con if
 if lluvia >= 0 and lluvia < 60:
