@@ -77,6 +77,9 @@ pokemons = [
 
 print("1. Muestra en una sóla línea el nombre y el peso del pokémon con más peso.")
 pokemon_mas_pesado = pokemons[0]
+nueva_lista = [pokemon for pokemon in pokemons if pokemon["peso_kg"] > pokemon_mas_pesado]
+
+
 for pokemon in pokemons:
     if pokemon["peso_kg"] > pokemon_mas_pesado["peso_kg"]:
         pokemon_mas_pesado = pokemon
