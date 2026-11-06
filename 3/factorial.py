@@ -18,3 +18,4 @@ def factorial(n : int) -> int:
     return resultado
 
 print(factorial(5))  # Ejemplo de uso, debería imprimir 120
+
